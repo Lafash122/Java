@@ -11,7 +11,7 @@ javac *.java
 
 To run use
 ```cmd
-java Main
+java Main in.txt out.csv
 ```
 
 ## Information about the input files
