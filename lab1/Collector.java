@@ -26,6 +26,8 @@ public class Collector {
 				Matcher match = ptrn.matcher(line);
 				while (match.find()) {
 					map.put(match.group(), map.getOrDefault(match.group(), 0) + 1);
+					//the line of code below can be used instead of the line above
+					//map.merge(match.group(), 1, Integer::sum); 
 					wrds_cnt++;
 				}
 			}
